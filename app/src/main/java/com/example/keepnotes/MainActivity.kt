@@ -38,12 +38,17 @@ class MainActivity : AppCompatActivity() {
         val adaptador = NotaAdapter(notas)
         recView.adapter = adaptador
         recView.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+
+        val fab = findViewById(R.id.fab) as FloatingActionButton
+        fab.setImageResource(R.drawable.ic_corazon)
+
+        fab.setOnClickListener {
+            val rotar = getDrawable(R.drawable.ad_rotation) as AnimatedVectorDrawable
+            fab.setImageDrawable(rotar)
+            rotar.start()
+        }
     }
 
-//    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-//        val inflater = menuInflater
-//        inflater.inflate(R.menu.menu_main, menu)
-//        return true
-//    }
+
 }
 
