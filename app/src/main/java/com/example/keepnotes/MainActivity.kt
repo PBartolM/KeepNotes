@@ -39,6 +39,14 @@ class MainActivity : AppCompatActivity() {
         recView.adapter = adaptador
         recView.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
 
+        adaptador.onClick = {
+
+
+        }
+
+
+
+
         val fab = findViewById(R.id.fab) as FloatingActionButton
         fab.setImageResource(R.drawable.ic_corazon)
 
@@ -47,6 +55,7 @@ class MainActivity : AppCompatActivity() {
             fab.setImageDrawable(rotar)
             rotar.start()
         }
+
     }
 
 
