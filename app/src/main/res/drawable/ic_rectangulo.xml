@@ -6,6 +6,6 @@
     android:thicknessRatio="1"
     >
     <gradient
-        android:startColor="#FF4081"
-        android:endColor="#FF4081"/>
+        android:startColor="#8BC34A"
+        android:endColor="#009688"/>
 </shape>
